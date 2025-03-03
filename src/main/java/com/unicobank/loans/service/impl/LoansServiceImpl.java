@@ -3,16 +3,22 @@ package com.unicobank.loans.service.impl;
 import com.unicobank.loans.constant.LoansConstants;
 import com.unicobank.loans.dto.LoansDto;
 import com.unicobank.loans.entity.Loans;
+import com.unicobank.loans.exception.LoanAlreadyExistsException;
+import com.unicobank.loans.exception.ResourceNotFoundException;
 import com.unicobank.loans.mapper.LoansMapper;
 import com.unicobank.loans.repository.LoansRepository;
 import com.unicobank.loans.service.ILoansService;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 import java.util.Random;
 
+@Service
+@AllArgsConstructor
 public class LoansServiceImpl implements ILoansService {
 
-    private LoansRepository loansRepository;
+    private final LoansRepository loansRepository;
 
     /**
      * @param mobileNumber - Mobile Number of the Customer

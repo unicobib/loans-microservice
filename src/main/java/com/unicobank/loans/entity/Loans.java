@@ -10,7 +10,7 @@ import lombok.ToString;
 
 @Entity
 @Getter@Setter@ToString
-public class Loans {
+public class Loans extends BaseEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
