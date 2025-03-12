@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "2.0"
+
+accounts:
+  name: "Welcome to Unicobank Prod Cards APIs"
+  contactDetails:
+    name: "Mandit Sharma - Product Owner"
+    email: "mandit.srma@bank.com"
+  onCallSupport:
+    - (91) 4332-091234
+    - (91) 4569-234102
